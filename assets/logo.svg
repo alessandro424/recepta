@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" fill="none" role="img" aria-label="Recepta">
+  <!-- Symbol: chat bubble with a reception bell -->
+  <path d="M8 4h28a8 8 0 0 1 8 8v18a8 8 0 0 1-8 8H20l-9 7v-7H8a8 8 0 0 1-8-8V12a8 8 0 0 1 8-8Z" fill="#6C4CF5"/>
+  <path d="M12 29h20" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M13.5 26a8.5 8.5 0 0 1 17 0Z" fill="#FFFFFF"/>
+  <circle cx="22" cy="14.5" r="2" fill="#FFFFFF"/>
+  <text x="56" y="33" font-family="Fraunces, Georgia, serif" font-size="28" font-weight="600" letter-spacing="-0.5" fill="#14123B">recepta</text>
+</svg>

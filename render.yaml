@@ -1,0 +1,11 @@
+# Blueprint de Render: web estática, sin build.
+services:
+  - type: web
+    name: recepta
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN

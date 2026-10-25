@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recepta · AI agents for guest communication</title>
+  <meta name="description" content="Recepta builds AI agents connected to your PMS that answer, resolve and sell to your guests on WhatsApp, email and OTAs — 24/7, in their language.">
+  <meta name="theme-color" content="#F5F4FB">
+  <meta property="og:title" content="Recepta · Your front desk never sleeps">
+  <meta property="og:description" content="AI agents connected to your PMS for hotels and vacation rentals.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#" class="nav-logo" aria-label="Recepta home"><img src="assets/logo.svg" alt="Recepta" width="160" height="35"></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#agents">Agents</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#integrations">Integrations</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#company">Company</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#demo" class="login">Log in</a>
+      <a href="#demo" class="btn btn-primary">Book a demo</a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">AI agents for hotels &amp; vacation rentals</span>
+        <h1>Your front desk never sleeps. <em class="hl">Your inbox</em> shouldn't either.</h1>
+        <p class="lead">Recepta puts AI agents to work on top of your PMS. They answer, resolve and upsell every guest across WhatsApp, email and OTAs — instantly, in the guest's language and in your house voice.</p>
+        <div class="hero-ctas">
+          <a href="#demo" class="btn btn-primary">Book a 20-min demo →</a>
+          <a href="#agents" class="btn btn-ghost">Meet the agents</a>
+        </div>
+        <div class="hero-proof">
+          <div><strong>38 s</strong>average response time</div>
+          <div><strong>82%</strong>conversations resolved without staff</div>
+          <div><strong>31</strong>languages</div>
+        </div>
+      </div>
+
+      <div class="demo" aria-label="Animated conversation demo">
+        <div class="badge-float"><b>+14%</b> extra revenue<br>from upsells</div>
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="chat-head">
+              <div class="chat-avatar"><svg viewBox="0 0 48 48" fill="none"><path d="M13 29h22" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round"/><path d="M14.5 26a9.5 9.5 0 0 1 19 0Z" fill="#FFFFFF"/><circle cx="24" cy="13.5" r="2.2" fill="#FFFFFF"/></svg></div>
+              <div><b>Casa Albera · Front desk</b><small>Recepta agent online</small></div>
+            </div>
+            <div class="chat-body" id="chat"></div>
+          </div>
+        </div>
+        <div class="pms-feed">
+          <h4>Actions in your PMS <span>● live</span></h4>
+          <ul id="feed"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHANNELS -->
+  <div class="channels">
+    <div class="wrap channels-inner">
+      <p>One agent, every channel:</p>
+      <span class="chip"><i style="background:#25D366"></i>WhatsApp</span>
+      <span class="chip"><i style="background:#6C4CF5"></i>Email</span>
+      <span class="chip"><i style="background:#003580"></i>Booking.com</span>
+      <span class="chip"><i style="background:#FF385C"></i>Airbnb</span>
+      <span class="chip"><i style="background:#0E9F75"></i>SMS</span>
+      <span class="chip"><i style="background:#14123B"></i>Web chat</span>
+    </div>
+  </div>
+
+  <!-- PROBLEM -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">The problem</span>
+        <h2>Your team wasn't hired to answer <em class="hl">“what time is check-in?”</em> forty times a day.</h2>
+        <p class="lead">Most guest messages are repeats, arrive at night or in another language, and ask for something already sitting in your PMS. Every slow reply is a potential bad review — or a sale that never happens.</p>
+      </div>
+      <div class="stats">
+        <div class="stat reveal"><b>7<small>/10</small></b><p>guest messages are repeat questions that booking data can answer.</p></div>
+        <div class="stat reveal"><b>41<small>%</small></b><p>arrive outside front-desk hours, mostly the night before arrival.</p></div>
+        <div class="stat reveal"><b>3.2<small>h</small></b><p>a day per person spent copy-pasting replies between inboxes.</p></div>
+        <div class="stat accent reveal"><b>−80<small>%</small></b><p>manual messages after 30 days on Recepta.</p></div>
+      </div>
+      <p class="footnote">Aggregated data from Recepta's customer base, January–September 2026.</p>
+    </div>
+  </section>
+
+  <!-- AGENTS -->
+  <section class="section agents" id="agents">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">The agents</span>
+        <h2>A team of specialist agents, not a generic chatbot.</h2>
+        <p class="lead">Each agent has one job, clear rules and scoped permissions in your PMS. They read the booking, act on it — and know exactly when to hand the conversation to a human.</p>
+      </div>
+      <div class="agent-grid">
+        <article class="agent reveal">
+          <div class="agent-icon" style="background:rgba(108,76,245,.25)">✈️</div>
+          <div class="role">Pre-arrival</div>
+          <h3>Welcome Agent</h3>
+          <p>Reaches out days before arrival, confirms the arrival time, answers transport questions and collects special requests.</p>
+          <div class="action">→ booking.arrival_time = "23:30"</div>
+        </article>
+        <article class="agent reveal">
+          <div class="agent-icon" style="background:rgba(14,159,117,.25)">🪪</div>
+          <div class="role">Arrival</div>
+          <h3>Check-in Agent</h3>
+          <p>Nudges guests to complete online check-in, chases the ones who haven't, and sends access instructions or the smart-lock code once everything is in order.</p>
+          <div class="action">→ lock.send_code(room 204)</div>
+        </article>
+        <article class="agent reveal">
+          <div class="agent-icon" style="background:rgba(255,200,87,.2)">🛎️</div>
+          <div class="role">In-stay</div>
+          <h3>Concierge Agent</h3>
+          <p>Wi-Fi, parking, restaurants, breakfast hours or how the induction hob works. Answers from your house guide and local recommendations.</p>
+          <div class="action">→ guide.search("nearby parking")</div>
+        </article>
+        <article class="agent reveal">
+          <div class="agent-icon" style="background:rgba(108,76,245,.25)">💶</div>
+          <div class="role">Revenue</div>
+          <h3>Upsell Agent</h3>
+          <p>Offers early check-in, late check-out, room upgrades or transfers at the right moment — with real prices and availability — and charges on the spot.</p>
+          <div class="action">→ pms.add_charge("late_checkout", €25)</div>
+        </article>
+        <article class="agent reveal">
+          <div class="agent-icon" style="background:rgba(120,190,255,.2)">🧰</div>
+          <div class="role">Operations</div>
+          <h3>Issues Agent</h3>
+          <p>Spots complaints and breakdowns, opens the task for housekeeping or maintenance, and pings the manager on duty when it's urgent.</p>
+          <div class="action">→ task.create(maintenance, priority: high)</div>
+        </article>
+        <article class="agent reveal">
+          <div class="agent-icon" style="background:rgba(14,159,117,.25)">⭐</div>
+          <div class="role">Post-stay</div>
+          <h3>Reviews Agent</h3>
+          <p>Asks how the stay went before guests say it in public, invites happy guests to leave a review and drafts replies to the ones already posted.</p>
+          <div class="action">→ ota.reply_review(draft)</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" id="how-it-works">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">How it works</span>
+        <h2>Live in a week. No system migration.</h2>
+        <p class="lead">Recepta sits on top of the PMS you already use. Your team keeps working the same way — just with far fewer messages.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <h3>Connect your PMS</h3>
+          <p>One-click API connection. Agents read bookings, guests, rates and availability, and write only what you allow.</p>
+        </div>
+        <div class="step reveal">
+          <h3>Give them your voice</h3>
+          <p>We load your house guide, policies and go-to replies, then tune the tone so it sounds like your front desk — not a robot.</p>
+        </div>
+        <div class="step reveal">
+          <h3>Supervise, then delegate</h3>
+          <p>Start in draft mode and approve every reply. Once you trust it, switch on autopilot by agent, channel or message type.</p>
+        </div>
+      </div>
+
+      <div class="inbox reveal" aria-label="Recepta inbox preview">
+        <div class="inbox-bar"><i></i><i></i><i></i><span>app.recepta.ai / inbox</span></div>
+        <div class="inbox-grid">
+          <div class="inbox-list">
+            <div class="thread active"><b>Lena Hoffmann <small>2 min</small></b><p>Can I check out a bit later on Sunday?</p><span class="tag up">Upsell · €25</span></div>
+            <div class="thread"><b>Marco Bellini <small>9 min</small></b><p>Perfetto, grazie per il codice!</p><span class="tag ok">Resolved by agent</span></div>
+            <div class="thread"><b>Claire Dubois <small>24 min</small></b><p>Il n'y a plus d'eau chaude dans…</p><span class="tag esc">Escalated to maintenance</span></div>
+            <div class="thread"><b>Javier Ruiz <small>1 h</small></b><p>¿Se puede aparcar cerca?</p><span class="tag ok">Resolved by agent</span></div>
+          </div>
+          <div class="inbox-conv">
+            <span class="note">Booking #48213 · Room 204 · 3 nights</span>
+            <div class="msg guest">Hi! Can I check out a bit later on Sunday? Our flight is at 6pm.</div>
+            <div class="msg agent">Hi Lena! Room 204 is free on Sunday, so we can offer a late check-out until 4pm for €25. Shall I add it to your booking?<span class="meta">Upsell Agent · 12:41</span></div>
+            <div class="msg guest">Yes please 🙌</div>
+            <div class="msg agent">Done! Late check-out confirmed until 4pm — you'll see it on your bill. Enjoy your stay!<span class="meta">Upsell Agent · 12:42</span></div>
+            <span class="note">✓ €25 charge posted to the PMS</span>
+          </div>
+          <div class="inbox-side">
+            <h5>Booking</h5>
+            <div class="kv"><span>Guest</span><b>Lena Hoffmann</b></div>
+            <div class="kv"><span>Language</span><b>English</b></div>
+            <div class="kv"><span>Online check-in</span><b style="color:var(--ok)">Completed</b></div>
+            <div class="kv"><span>Channel</span><b>WhatsApp</b></div>
+            <div class="upsell"><b>+€25</b>generated by the agent in this conversation</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTEGRATIONS -->
+  <section class="section" id="integrations" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Integrations</span>
+        <h2>Plugged into everything that runs your operation.</h2>
+        <p class="lead">60+ native connectors and an open API for the rest. If your system has an API, your agents can use it.</p>
+      </div>
+      <div class="integ-grid">
+        <div class="integ reveal"><div class="ico">🏨</div><h3>PMS</h3><p>Bookings, guests, charges and room status in real time — read and write.</p></div>
+        <div class="integ reveal"><div class="ico">🔄</div><h3>Channel managers &amp; OTAs</h3><p>OTA messaging unified in a single inbox, with each booking's context attached.</p></div>
+        <div class="integ reveal"><div class="ico">🔐</div><h3>Smart locks &amp; online check-in</h3><p>Access codes and guest registration status, so only the right people get in.</p></div>
+        <div class="integ reveal"><div class="ico">💳</div><h3>Payments</h3><p>Payment links for extras, deposits and damage holds, reconciled on the booking.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Trusted by hosts</span>
+        <h2>Hotels that got their evenings back.</h2>
+      </div>
+      <div class="quotes">
+        <figure class="quote reveal">
+          <blockquote>“We used to close the front desk at 11pm and the phone kept ringing. Now the agent handles late arrivals and I actually sleep.”</blockquote>
+          <figcaption><span class="initials" style="background:var(--accent-tint);color:var(--accent-dark)">LP</span><div><b>Lucía Prats</b><span>General Manager · Hostal Mar de Lleva, Sitges</span></div></figcaption>
+        </figure>
+        <figure class="quote reveal">
+          <blockquote>“140 apartments and three people in guest experience — it was impossible. Recepta answers 85% and the rest reaches us already summarised.”</blockquote>
+          <figcaption><span class="initials" style="background:var(--ok-tint);color:var(--ok)">TG</span><div><b>Tomás Garrido</b><span>COO · Nido Apartments, Málaga</span></div></figcaption>
+        </figure>
+        <figure class="quote reveal">
+          <blockquote>“The upsell agent paid for itself in the first month. It sells late check-outs we never even remembered to offer.”</blockquote>
+          <figcaption><span class="initials" style="background:#FFF1C9;color:#8A5A00">IB</span><div><b>Irene Bassols</b><span>Revenue Manager · Hotel Cal Ferrer, Girona</span></div></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section" id="pricing" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Pricing</span>
+        <h2>Pay per unit, not per message.</h2>
+        <p class="lead">No lock-in, no setup fees and a 14-day free trial on every plan.</p>
+        <div class="billing-toggle" role="group" aria-label="Billing period">
+          <button class="on" data-period="month">Monthly</button>
+          <button data-period="year">Yearly <em>−20%</em></button>
+        </div>
+      </div>
+      <div class="plans">
+        <div class="plan reveal">
+          <h3>Essential</h3>
+          <p class="for">For properties with up to 15 units.</p>
+          <div class="price" data-month="89" data-year="71">€89<small> /mo</small></div>
+          <p class="price-note" data-month="Billed monthly" data-year="Billed yearly (€852)">Billed monthly</p>
+          <ul>
+            <li>Welcome, Check-in and Concierge agents</li>
+            <li>WhatsApp, email and web chat</li>
+            <li>1 PMS integration</li>
+            <li>Email support</li>
+          </ul>
+          <a href="#demo" class="btn btn-ghost">Start free trial</a>
+        </div>
+        <div class="plan featured reveal">
+          <h3>Growth</h3>
+          <p class="for">For hotels and operators with 16–150 units.</p>
+          <div class="price" data-month="249" data-year="199">€249<small> /mo</small></div>
+          <p class="price-note" data-month="+€1.50 per extra unit" data-year="Billed yearly · +€1.20 per extra unit">+€1.50 per extra unit</p>
+          <ul>
+            <li>All 6 agents, including Upsell</li>
+            <li>Every channel plus OTA messaging</li>
+            <li>Smart locks, payments and online check-in</li>
+            <li>Conversation and revenue analytics</li>
+            <li>Guided onboarding in 7 days</li>
+          </ul>
+          <a href="#demo" class="btn btn-primary">Book a demo</a>
+        </div>
+        <div class="plan reveal">
+          <h3>Chain</h3>
+          <p class="for">For hotel groups and 150+ units.</p>
+          <div class="price" data-month="custom" data-year="custom">Custom</div>
+          <p class="price-note" data-month="Volume pricing" data-year="Volume pricing">Volume pricing</p>
+          <ul>
+            <li>Custom agents per brand</li>
+            <li>SSO, roles and full audit log</li>
+            <li>EU-hosted deployment with your own DPA</li>
+            <li>Dedicated Customer Success and 99.9% SLA</li>
+          </ul>
+          <a href="#demo" class="btn btn-ghost">Talk to sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER -->
+  <section class="section founder" id="company">
+    <div class="wrap founder-grid">
+      <div class="portrait reveal" aria-hidden="true">
+        <svg viewBox="0 0 380 475" preserveAspectRatio="xMidYMax slice">
+          <path d="M108 185c0-60 40-96 86-96 50 0 84 38 80 100-4 52-10 70-6 96l-30-30c8-34 6-58-14-82-22 12-60 18-96 14 0 28-6 44-20 62-6-20-8-40 0-64Z" fill="#14123B"/>
+          <ellipse cx="190" cy="200" rx="58" ry="68" fill="#F2C9A8"/>
+          <path d="M132 190c4-52 38-74 70-72 34 2 58 30 56 70-30-6-58-22-74-46-10 24-28 40-52 48Z" fill="#14123B"/>
+          <path d="M60 475c0-90 56-150 130-150s130 60 130 150Z" fill="#14123B"/>
+          <path d="M168 262h44v40c0 12-44 12-44 0Z" fill="#F2C9A8"/>
+          <path d="M150 330l40 40 40-40" stroke="#7EE8C3" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="card"><b>Martina Ferrer Olmos</b>Founder &amp; CEO</div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Why Recepta exists</span>
+        <blockquote>“I spent ten years behind a front desk. What guests value most isn't a beautiful lobby — it's getting a fast, good answer.”</blockquote>
+        <p>Martina Ferrer started out as a night receptionist at a hotel in Barceloneta and went on to run operations for a group of 900 holiday apartments. She watched teams burn out answering the same messages, and watched revenue slip away because replies came too late.</p>
+        <p>In 2024 she founded Recepta in Barcelona with a small team of engineers and former receptionists, around one simple idea: let technology handle the repetitive work so people can focus on what really matters in hospitality.</p>
+        <div class="sign">Martina Ferrer</div>
+        <div class="values">
+          <span>🏠 Hospitality first</span>
+          <span>🤝 Humans stay in charge</span>
+          <span>🇪🇺 Data stays in Europe</span>
+          <span>⚡ Replies in seconds</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2>What people ask before getting started.</h2>
+      </div>
+      <div class="faq reveal">
+        <details open>
+          <summary>Does it work with my PMS?</summary>
+          <p>Recepta integrates with the most widely used PMSs and channel managers for hotels and vacation rentals. If yours has an API, we'll connect it — and if it's not on the list yet, we build the connector during onboarding at no cost on the Growth plan.</p>
+        </details>
+        <details>
+          <summary>What if the agent doesn't know the answer?</summary>
+          <p>It won't make one up. When a question isn't covered by your information, or a guest is upset, the agent escalates to your team with a summary and a suggested reply.</p>
+        </details>
+        <details>
+          <summary>Can I review replies before they go out?</summary>
+          <p>Yes. Every agent starts in draft mode. You decide which message types, channels or agents move to autopilot, and when.</p>
+        </details>
+        <details>
+          <summary>What about my guests' data?</summary>
+          <p>Everything is hosted in the European Union, we're GDPR-compliant and we sign a data processing agreement with every customer. We never use your conversations to train third-party models.</p>
+        </details>
+        <details>
+          <summary>How long does setup take?</summary>
+          <p>Connecting the PMS takes minutes. Full onboarding — house guide, tone and rules — is usually done in under a week.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / DEMO -->
+  <section class="section" id="demo" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta reveal">
+        <div>
+          <h2>Give your team their evenings back.</h2>
+          <p>In 20 minutes we'll show you how Recepta's agents would answer your guests' real messages.</p>
+        </div>
+        <form class="form" id="demo-form" novalidate>
+          <div class="row">
+            <label>Name<input name="name" required autocomplete="name" placeholder="Your name"></label>
+            <label>Work email<input name="email" type="email" required autocomplete="email" placeholder="you@hotel.com"></label>
+          </div>
+          <div class="row">
+            <label>Property<input name="property" placeholder="Hotel name"></label>
+            <label>Units
+              <select name="units">
+                <option>1–15</option><option selected>16–50</option><option>51–150</option><option>150+</option>
+              </select>
+            </label>
+          </div>
+          <button class="btn btn-primary" type="submit">Book my demo →</button>
+          <small>We'll get back to you within one business day.</small>
+          <div class="form-ok"><div style="font-size:40px">🛎️</div><b>Got it!</b>Martina or someone from the team will be in touch very soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="assets/logo.svg" alt="Recepta" width="146" height="32">
+        <p>AI agents for guest communication in hotels and vacation rentals. Made in Barcelona.</p>
+      </div>
+      <div><h6>Product</h6><ul><li><a href="#agents">Agents</a></li><li><a href="#integrations">Integrations</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h6>Company</h6><ul><li><a href="#company">About us</a></li><li><a href="brand.html">Brand</a></li><li><a href="#demo">Contact</a></li></ul></div>
+      <div><h6>Legal</h6><ul><li><a href="#faq">Privacy &amp; GDPR</a></li><li><a href="#faq">Security</a></li></ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Recepta Labs, S.L. · Barcelona</span>
+      <span>Fictional company built as a demo project.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

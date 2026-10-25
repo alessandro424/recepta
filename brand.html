@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recepta · Brand guidelines</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .b-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+    .swatch { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: #fff; }
+    .swatch div { height: 120px; }
+    .swatch p { padding: 14px 16px; font-size: 14px; }
+    .swatch p b { display: block; font-size: 16px; }
+    .swatch code { color: var(--ink-soft); }
+    .logo-box { border-radius: var(--radius); padding: 48px 32px; display: grid; place-items: center; min-height: 200px; border: 1px solid var(--line); }
+    .logo-box img { max-height: 60px; width: auto; }
+    .type-sample { background: #fff; border-radius: var(--radius); padding: 32px; border: 1px solid var(--line); }
+    .b-section { margin-bottom: 80px; }
+    .b-section > h2 { font-size: 34px; margin-bottom: 8px; }
+    .b-section > p { color: var(--ink-soft); margin-bottom: 28px; max-width: 64ch; }
+    .voice { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .voice div { background: #fff; border-radius: var(--radius); padding: 24px; border: 1px solid var(--line); }
+    .voice h3 { font-size: 18px; margin-bottom: 10px; }
+    .voice li { margin: 6px 0 6px 18px; color: var(--ink-soft); }
+    @media (max-width: 640px) { .voice { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<header class="nav scrolled">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/logo.svg" alt="Recepta" width="160" height="35"></a>
+    <a href="index.html" class="btn btn-ghost" style="padding:10px 18px">← Back to site</a>
+  </div>
+</header>
+<main class="wrap section">
+  <span class="eyebrow">Brand guidelines · v1.0</span>
+  <h1 style="margin:16px 0 20px">Recepta, in a nutshell.</h1>
+  <p class="lead" style="margin-bottom:72px">Recepta comes from “recepción” — reception, the heart of every property. The brand should feel like arriving at a great hotel: warm, reliable and smart, with someone clearly looking after you.</p>
+
+  <section class="b-section">
+    <h2>Logo</h2>
+    <p>The symbol merges a chat bubble with a reception bell: conversation and hospitality in a single mark. The wordmark is always set in lowercase.</p>
+    <div class="b-grid">
+      <div class="logo-box" style="background:var(--bg)"><img src="assets/logo.svg" alt="Logo on Mist"></div>
+      <div class="logo-box" style="background:#fff"><img src="assets/favicon.svg" alt="Symbol" style="max-height:96px"></div>
+      <div class="logo-box" style="background:var(--ink)"><img src="assets/logo.svg" alt="Logo on Midnight" style="filter:brightness(0) invert(1)"></div>
+    </div>
+  </section>
+
+  <section class="b-section">
+    <h2>Color</h2>
+    <p>Violet is the accent: buttons, key numbers and the word that matters. Midnight brings tech credibility, Mist keeps pages light and calm, and Mint signals that something has been resolved.</p>
+    <div class="b-grid">
+      <div class="swatch"><div style="background:#6C4CF5"></div><p><b>Violet</b><code>#6C4CF5</code> · action, accent</p></div>
+      <div class="swatch"><div style="background:#14123B"></div><p><b>Midnight</b><code>#14123B</code> · text, dark surfaces</p></div>
+      <div class="swatch"><div style="background:#F5F4FB"></div><p><b>Mist</b><code>#F5F4FB</code> · main background</p></div>
+      <div class="swatch"><div style="background:#7EE8C3"></div><p><b>Mint</b><code>#7EE8C3</code> · highlights on dark</p></div>
+      <div class="swatch"><div style="background:#0E9F75"></div><p><b>Deep Mint</b><code>#0E9F75</code> · success, “resolved”</p></div>
+    </div>
+  </section>
+
+  <section class="b-section">
+    <h2>Typography</h2>
+    <p>Fraunces, a warm serif with editorial character, for headlines. Inter, neutral and highly legible, for everything else.</p>
+    <div class="b-grid">
+      <div class="type-sample"><p style="color:var(--ink-soft);font-size:13px;margin-bottom:10px">Headlines · Fraunces 600</p><h2 style="font-size:44px">Your front desk never <em class="hl">sleeps</em>.</h2></div>
+      <div class="type-sample"><p style="color:var(--ink-soft);font-size:13px;margin-bottom:10px">Body · Inter 400 / 600</p><p style="font-size:18px">AI agents connected to your PMS that answer, resolve and upsell every guest. <b>Instantly, in their language.</b></p></div>
+    </div>
+  </section>
+
+  <section class="b-section">
+    <h2>Voice &amp; tone</h2>
+    <p>We sound like a great head of reception: friendly, decisive and jargon-free.</p>
+    <div class="voice">
+      <div><h3>✓ Do</h3><ul><li>“Your agents reply while you sleep.”</li><li>Short sentences, action verbs.</li><li>Concrete, verifiable numbers.</li><li>Talk to the reader as “you”.</li></ul></div>
+      <div><h3>✗ Don't</h3><ul><li>“Disruptive LLM-powered omnichannel solution.”</li><li>Promise that AI replaces the team.</li><li>Unexplained technical jargon.</li><li>Exclamation marks everywhere.</li></ul></div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap foot-bottom"><span>© 2026 Recepta Labs, S.L. · Barcelona</span><span>Fictional company built as a demo project.</span></div></footer>
+</body>
+</html>
